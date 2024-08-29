@@ -16,3 +16,10 @@ longer("hello Hello") => Hello hello
 
 
 // Solution
+
+function longer(s) {
+  return s
+    .split(" ")
+    .sort()
+    .sort((a,b) => a.length - b.length || a > b).join(" ");
+}
