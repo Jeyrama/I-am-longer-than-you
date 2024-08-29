@@ -23,3 +23,5 @@ function longer(s) {
     .sort()
     .sort((a,b) => a.length - b.length || a > b).join(" ");
 }
+
+// or
