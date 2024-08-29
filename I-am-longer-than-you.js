@@ -25,3 +25,16 @@ function longer(s) {
 }
 
 // or
+
+function longer(string) {
+  const sort = (a, b) => {
+    if (a.length !== b.length) return a.length - b.length;
+
+    for (let i = 0; i < a.length; i++) {
+      const diff = a.charCodeAt(i) - b.charCodeAt(i)
+      if (diff) return diff;
+    }
+    return 0;
+  }
+  return string.split(' ').sort(sort).join(' ');
+}
