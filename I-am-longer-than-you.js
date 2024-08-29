@@ -13,3 +13,6 @@ Uppercase characters have priority over lowercase characters. That is,
 
 longer("hello Hello") => Hello hello
 */
+
+
+// Solution
